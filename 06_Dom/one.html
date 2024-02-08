@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Learning</title>
+    <style>
+    body{
+        background-color: black;
+        color: aliceblue;
+    } 
+     </style>
+</head>
+<body style="background-color: black;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thurwsday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);          // acces the element
+
+
+    //2
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML); 
+    // }
+
+
+    //3
+    parent.children[2].style.color = "blue"
+</script>
+</html>
